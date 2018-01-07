@@ -1,0 +1,42 @@
+﻿@model WebApplication1.Models.Urls
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Urls</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.href)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.href)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.text)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.text)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.sortId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.sortId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
